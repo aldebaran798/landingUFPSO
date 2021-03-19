@@ -1,0 +1,231 @@
+:root {
+  --width-container: 1200px;
+  --red-ufpso: #d41224;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header-wrapper {
+  background: url(../images/portal-acceso.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#header {
+  margin: 0 auto;
+  max-width: var(--width-container);
+  max-height: 674px;
+}
+
+#social-wrapper {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#social-icons {
+  margin: 0 auto;
+  padding: 0 1em;
+  text-align: right;
+  max-width: var(--width-container);
+  list-style: none;
+  font-size: 0;
+}
+
+#social-icons li {
+  display: inline-block;
+}
+
+#social-icons li a {
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#social-icons li a span {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#social-icons li a:hover {
+  color: var(--red-ufpso);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#logo {
+  max-width: 400px;
+  border-radius: 5px;
+  border: 3px solid var(--red-ufpso);
+  padding: 0 1.6em;
+  background: #fff;
+  text-align: center;
+  margin: 5% 0;
+}
+
+#logo img {
+  max-width: 100%;
+}
+
+#menu {
+  text-align: center;
+  background: var(--red-ufpso);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 14em;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; /* Elimina el padding entre elementos inline-block */
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu a {
+  display: block;
+  padding: 0 2em 0 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  line-height: 60px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#menu a:hover,
+#menu .current_page_item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  margin: 0 auto;
+  max-width: var(--width-container)
+}
+
+.news {
+  margin: 4em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.8)
+}
+
+.news h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--red-ufpso)
+}
+
+.news div {
+  padding: 0 .8em;
+  max-width: 22%;
+  min-width: 220px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.news div:hover {
+  box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.1);
+  cursor: pointer
+}
+
+.news img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+#careers-wrapper {
+  padding: 5em 0em;
+  background: rgba(0, 0, 0, 0.02);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#careers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#careers div {
+  text-align: center;
+  max-width: 21%;
+  min-width: 180px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 0 1em 1em 1em;
+  transition: background 0.3s ease;
+}
+
+#careers div:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#careers-wrapper h2 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#careers-wrapper h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.subtitle {
+  display: block;
+  text-align: center;
+  padding-bottom: 2em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.button {
+  display: block;
+  width: 140px;
+  text-align: center;
+  margin: 2em auto 0 auto;
+  padding: 0em .8em;
+  border: 1px solid var(--red-ufpso);
+  color: var(--red-ufpso);
+  border-radius: 3px;
+  letter-spacing: 0.1em;
+  line-height: 3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .8em;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--red-ufpso);
+  color: #fff;
+}
+
+#footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 50px 0px 30px 0px;
+}
